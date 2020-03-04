@@ -5,17 +5,17 @@
 
 
 var stringifyJSON = function(obj) {
-  // your code goes here
-  var stringify = ''
+  var stringify = '';
+
   if (typeof(obj) === 'boolean' || typeof(obj) === 'number') {
     return stringify += obj;
-  };
+  }
   if (typeof(obj) === 'string') {
     return stringify += '"' + obj + '"';
-  };
+  }
   if(obj === undefined) {
     return stringify += '';
-  };
+  }
   if(obj === null) {
     return 'null';
   }
@@ -39,10 +39,3 @@ var stringifyJSON = function(obj) {
   }
   return stringify;
 };
-console.log(stringifyJSON(true), typeof(stringifyJSON(true)));
-console.log(stringifyJSON(null), typeof(stringifyJSON(null)));
-console.log(stringifyJSON(undefined), typeof(stringifyJSON(undefined)));
-console.log(stringifyJSON(1234), typeof(stringifyJSON(1234)));
-console.log(stringifyJSON('string'), typeof(stringifyJSON('string')));
-console.log(stringifyJSON([1,2,3,4]), typeof(stringifyJSON([1,2,3,4])));
-console.log(stringifyJSON({a:1, b:'string'}), typeof(stringifyJSON({a:1, b:2})));
