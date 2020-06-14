@@ -1,4 +1,4 @@
-# recursion-review
+# recursion
 This is a project I completed as a student at [hackreactor](http://hackreactor.com). This project was worked on independently.
 
 ## Getting Started
@@ -19,10 +19,8 @@ npm install
 
 ## Running the tests
 
-This repo uses live server to run its test. To start
-
 ```
-npm start
+run SpecRunner.html
 ```
 
 ## Built With
